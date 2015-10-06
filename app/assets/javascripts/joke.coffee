@@ -22,7 +22,7 @@ class @Joke
               _.content.html(data.next_joke['content'].replace(/\n/g,"<br>"))     
             else
               _.btnVote.hide()
-              alert('Voting completed')
+              alert("That's all the jokes for today! Come back another day!")
           else
             alert(data.notice)
       return false
