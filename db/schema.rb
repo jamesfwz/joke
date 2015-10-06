@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20151006024852) do
   create_table "votes", force: :cascade do |t|
     t.string   "session_code"
     t.integer  "our_joke_id"
-    t.boolean  "like"
+    t.boolean  "like",         default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end

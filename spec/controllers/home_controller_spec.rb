@@ -10,7 +10,7 @@ describe HomeController do
 
     it 'assign first joke and render view :index' do 
       do_request
-      expect(assigns(:our_joke)).to match our_joke
+      expect(assigns(:first_joke)).to match our_joke
       expect(response).to render_template :index
     end
   end

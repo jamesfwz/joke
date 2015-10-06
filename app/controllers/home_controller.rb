@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @our_joke = OurJoke.first
+    @first_joke = OurJoke.first
   end
 end
