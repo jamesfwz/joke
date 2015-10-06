@@ -1,0 +1,22 @@
+.shared-our-joke-container {
+  .content {
+    padding-bottom: 50px;
+    color: #646464;
+    font-size: 20px;
+  }
+
+  a.btn-vote {
+    display: inline-block;
+    width: 272px;
+    color: #fff;
+    background: #2c7edb;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 0;
+    padding: 12px 0 11px 0;
+
+    &.dislike {
+      background: #29b363;
+    }
+  }
+}

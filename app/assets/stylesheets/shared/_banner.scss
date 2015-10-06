@@ -1,0 +1,17 @@
+.shared-banner-container {
+  background: #29b363;
+  .content {
+    padding: 75px 20px;
+    text-align: center;
+
+    h1 {
+      color: #fff;
+      font-size: 36px;
+    }
+
+    p {
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+}

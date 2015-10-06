@@ -1,10 +1,13 @@
 .shared-our-joke-container
   #our-joke data-our-joke-id=@first_joke.id
     .content
-      = simple_format @first_joke.content
-    = link_to 'This is Funny!', '#', class: 'btn-vote like'
-    br
-    = link_to 'This is not funny.', '#', class: 'btn-vote dislike'
+      == @first_joke.content.gsub(/\n/, '<br />')
+
+    .row
+      .col-xs-6.text-right
+          = link_to 'This is Funny!', '#', class: 'btn btn-vote like'
+      .col-xs-6.text-left
+          = link_to 'This is not funny.', '#', class: 'btn btn-vote dislike'
 
 coffee:
   new Joke({ element: $('#our-joke') })
