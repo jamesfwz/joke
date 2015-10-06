@@ -6,12 +6,13 @@ html
     = javascript_include_tag 'application'
     = csrf_meta_tags
   body
-    header
-      = render 'shared/menu'
-      = render 'shared/banner'
+    #container
+      header
+        = render 'shared/menu'
+        = render 'shared/banner'
 
-    main
-      = yield
+      main
+        = yield
 
-    footer
-      = render 'shared/footer'
+      footer
+        = render 'shared/footer'
