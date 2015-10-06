@@ -1,0 +1,9 @@
+.shared-our-joke-container
+  #our-joke
+    .content data-our-joke-id={ OurJoke.first }
+    = link_to '#', 'This is Funny!', class: 'btn-vote funnny'
+    = link_to '#', 'This is not funny.', class: 'btn-vote not-funny'
+
+coffee:
+  joke = $('#our-joke')
+  content = joke.find('.content').first()
