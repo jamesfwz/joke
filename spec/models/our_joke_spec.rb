@@ -9,4 +9,13 @@ describe OurJoke do
   describe 'associations' do 
     it { is_expected.to have_many :votes }
   end
+
+  describe '#next' do
+    let!(:jokes)     { create_list(:our_joke, 2) }
+
+    it 'should get the next joke' do
+      expect(jokes.first.next).to match jokes.second
+      expect(jokes.second.next).to be nil
+    end
+  end
 end
